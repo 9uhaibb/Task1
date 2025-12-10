@@ -67,4 +67,7 @@
     font-size: 14px;
     transition: all 0.3s ease;
   }
+  .btn-small:hover {
+    background-color: #008b8b;
+  }
 
