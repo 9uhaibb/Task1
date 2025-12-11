@@ -291,6 +291,14 @@
     margin-bottom: .6rem;
     position: relative;
   }
+    
+  .feature-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 8px rgba(0, 170, 255, 0.5));
+    transition: all 0.3s ease;
+  }
+
 
   
   
