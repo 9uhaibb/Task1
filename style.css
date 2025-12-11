@@ -23,11 +23,20 @@
   html {
     scroll-behavior: smooth;
   }
+
+  body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
+
   h1,
   h2,
   h3,
@@ -36,6 +45,16 @@
     margin-bottom: 15px;
     transition: color 0.3s ease;
   }
+  p {
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+  }
+
   ul {
     list-style: none;
   }
@@ -44,6 +63,7 @@
     max-width: 100%;
     height: auto;
   }
+
   .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -54,10 +74,12 @@
     border: none;
     cursor: pointer;
   }
+
   .btn:hover {
     background-color: #008b8b;
     transform: translateY(-3px);
   }
+
   .btn-small {
     display: inline-block;
     background-color: var(--primary-color);
@@ -67,15 +89,22 @@
     font-size: 14px;
     transition: all 0.3s ease;
   }
+
   .btn-small:hover {
     background-color: #008b8b;
   }
+
+  section {
+    padding: 60px 0;
+  }
+
   h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
   }
+
   h2:after {
     content: "";
     position: absolute;
@@ -86,6 +115,17 @@
     height: 3px;
     background-color: var(--primary-color);
   }
+
+  
+  header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
   header::after {
     content: "";
     position: absolute;
@@ -107,6 +147,7 @@
   .logo img {
     height: 50px;
   }
+
   nav ul {
     display: flex;
   }
@@ -119,10 +160,13 @@
     font-weight: 500;
     position: relative;
   }
+
   nav ul li a:hover,
   nav ul li a.active {
     color: var(--primary-color);
   }
+
+
   nav ul li a:after {
     content: "";
     position: absolute;
@@ -138,13 +182,32 @@
   nav ul li a.active:after {
     width: 100%;
   }
+
   .header-icons a {
     margin-left: 15px;
     font-size: 18px;
   }
+
   .header-icons a:hover {
     color: var(--primary-color);
   }
+
+  .mobile-menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .theme-toggle,
+  .language-toggle {
+    cursor: pointer;
+  }
+  
+  .current-lang {
+    font-weight: bold;
+  }
+  
+
   .hero {
 
     padding: 80px 0;
@@ -155,6 +218,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
   .hero::before {
     content: "";
     position: absolute;
