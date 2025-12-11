@@ -285,6 +285,13 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 1.8rem;
     }
+      
+
+  .feature-icon {
+    margin-bottom: .6rem;
+    position: relative;
+  }
+
   
   
 
