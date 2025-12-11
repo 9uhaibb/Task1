@@ -253,6 +253,17 @@
     color: var( --secondary-color);
   }
 
+  .hero-content p {
+    color: var(--secondary-color);
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+
+
 
 
 
